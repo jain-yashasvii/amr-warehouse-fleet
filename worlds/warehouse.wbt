@@ -1,0 +1,163 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/RoughConcrete.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/pallet/protos/WoodenPalletStack.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/festo/robotino3/protos/Robotino3.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.7403828427152911 -0.01741926285402586 -0.6719596829382304 3.173205091954567
+  position -2.338240160154924 -1.5238197703997214 27.826726320798528
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+  floorAppearance RoughConcrete {
+  }
+  wallThickness 0.1
+  wallHeight 1
+}
+Robotino3 {
+  hidden position_0_0 59.59375500186955
+  hidden position_0_1 -330.0156837600968
+  hidden position_0_2 303.5644076768116
+  hidden linearVelocity_0 -0.22660260466734045 1.5195018875723693e-05 7.119094082022422e-13
+  hidden angularVelocity_0 -2.5306946352256597e-08 3.0665702357286626e-11 -4.7379789241509707e-05
+  hidden translation_1 0 0 0
+  hidden rotation_1 0 -1 0 3.2380980699263118
+  hidden linearVelocity_1 -0.2266100923677199 1.952363345405267e-05 3.926219563008309e-09
+  hidden angularVelocity_1 -2.0782692872560604 -3.5999768390302234 -0.0001126091530473283
+  hidden translation_2 0 0 0
+  hidden rotation_2 0 -0.9999999999999999 0 3.290047786758309
+  hidden linearVelocity_2 -0.22660260289814876 6.546909765199188e-06 -5.7154365914731215e-12
+  hidden angularVelocity_2 -0.00010079228376639178 -3.463612968607994e-09 -4.7381505161735616e-05
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 1 0 1.9715129321914329
+  hidden linearVelocity_3 -0.22659511432462717 1.952415089066885e-05 -3.9207181410241626e-09
+  hidden angularVelocity_3 2.078470795950769 -3.59974411690601 -6.120420892225998e-05
+  translation 2.21178399180049 -4.625761827644972 -0.0022915330147637997
+  rotation 6.152475332618196e-06 -1.032745050325061e-05 0.9999999999277455 1.0472315820869151
+  name "AMR1"
+  controller "fleet_brain"
+  topSlot [
+    Compass {
+      name "compass(1)"
+    }
+    GPS {
+    }
+  ]
+}
+Robotino3 {
+  hidden position_0_0 60.799112595805006
+  hidden position_0_1 -332.18736785825655
+  hidden position_0_2 304.52248052116533
+  hidden linearVelocity_0 -0.0001685068806983983 -0.00015607524268334256 -1.673294107099815e-05
+  hidden angularVelocity_0 -0.0001864351030576502 -0.00019151947363221157 0.02104166993939496
+  hidden translation_1 0 0 0
+  hidden rotation_1 0 -1 0 2.0327404759908587
+  hidden linearVelocity_1 0.002902970323853594 0.002157941676349085 3.092909216769579e-05
+  hidden angularVelocity_1 2.4285479556219527 -3.4163343013140497 0.007913936058019102
+  hidden translation_2 0 0 0
+  hidden rotation_2 0 -0.9999999999999999 0 5.461731884918054
+  hidden linearVelocity_2 -0.0037294168074855577 0.0015279765295828794 -3.2228981695141285e-05
+  hidden angularVelocity_2 -0.029480004722630827 -0.06424563086217656 0.02210424490562703
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 0.9999999999999999 0 2.929585776545184
+  hidden linearVelocity_3 0.00013336461074223344 -0.003891340339523726 -4.710643328621576e-05
+  hidden angularVelocity_3 4.101841199627209 0.3882567462056564 -0.054019226035087
+  translation -4.780979213537713 -4.7781548499982796 -0.0021060334588403617
+  rotation 0.006619250485122414 0.008810364292028536 0.9999392796585486 2.1893681410264323
+  name "AMR2"
+  controller "fleet_brain"
+  topSlot [
+    Compass {
+      name "compass(1)"
+    }
+    GPS {
+    }
+  ]
+}
+Solid {
+  translation 4 -3.5 -1
+  children [
+    Shape {
+    }
+    SolidBox {
+      size 0.6 0.6 0.01
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -4 3.5 -1
+  children [
+    Shape {
+    }
+    SolidBox {
+      size 0.6 0.6 0.01
+    }
+  ]
+}
+WoodenPalletStack {
+  translation -2 2 0
+  name "wooden pallet stack(1)"
+  lateralMisalignment 0
+  longitudinalMisalignment 0
+}
+WoodenPalletStack {
+  translation -2 0 0
+  name "wooden pallet stack(2)"
+}
+WoodenPalletStack {
+  translation -2 -2 0
+  name "wooden pallet stack(3)"
+}
+WoodenPalletStack {
+  translation 2 2 0
+}
+WoodenPalletStack {
+  translation 2 0 0
+  name "wooden pallet stack(4)"
+}
+WoodenPalletStack {
+  translation 2 -2 0
+  name "wooden pallet stack(5)"
+}
+Robotino3 {
+  hidden position_0_0 2967.0697575088966
+  hidden position_0_1 -7378.556574938873
+  hidden position_0_2 4449.122956431592
+  hidden linearVelocity_0 4.802617155845436e-05 0.00010886556943742078 7.608697679791934e-05
+  hidden angularVelocity_0 0.00017670300493909214 -0.0004675779928261204 -4.284131778774245e-05
+  hidden translation_1 0 0 0
+  hidden rotation_1 0 1 0 1.4062925201317835
+  hidden linearVelocity_1 -2.736701534648405e-05 7.254529030946273e-05 0.00016152692739802906
+  hidden angularVelocity_1 3.4907042453031245 2.0188441177032734 0.23818443502585138
+  hidden translation_2 0 0 0
+  hidden rotation_2 0 -1 0 2.097024310038858
+  hidden linearVelocity_2 -2.083957414834023e-05 8.850481296190056e-05 1.349591488207137e-05
+  hidden angularVelocity_2 -0.19490788869471956 0.11197608044366733 -0.004182713607779566
+  hidden translation_3 0 0 0
+  hidden rotation_3 0 1 0 0.6277589484445484
+  hidden linearVelocity_3 -3.0818655533721295e-05 8.191164450704515e-05 3.8783070453575995e-05
+  hidden angularVelocity_3 -0.009008855754405617 4.260792242034217 0.173121575831451
+  translation -2.753687015697415 -0.5507686648217259 -0.0013259933646549427
+  rotation -0.027780941187756474 -0.014341524204578748 0.9995111505081932 -2.6169859343687576
+  name "AMR3"
+  controller "fleet_brain"
+  topSlot [
+    Compass {
+      name "compass(1)"
+    }
+    GPS {
+    }
+  ]
+}
